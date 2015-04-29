@@ -25,19 +25,55 @@
 
         .purplebox{
             background-color: #B404AE;
-            width: 100px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
+            padding: 10px 100px;
         }
 
         .redbox{
             background-color: red;
-            width: 300px;
-            height: 110px;
+            width: 400px;
+            height: 220px;
+        }
+
+        p{
+            padding: 0;
+            margin:0;
+        }
+
+        .reddiv{
+            width: 100px;
+            background-color: red;
+            float: left;
+        }
+
+        .bluediv{
+            width: 100px;
+            background-color: blue;
+            float: left;
+        }
+
+        .greendiv{
+            width:100px;
+            background-color: green;
+            float: left;
         }
     </style>    
 </head>
 
 <body>
+    <div class="reddiv">
+        Blah
+    </div>
+
+    <div class="bluediv">
+        Bleh
+    </div>
+
+    <div class="greendiv">
+        Bluh
+    </div>
+
     <div class="purplebox">
         <p class="large">This is some text.</p>
     </div>
@@ -45,6 +81,7 @@
     <div class="redbox">
         <p id="green" class="large">This is more text.</p>
     </div>
+
     <p class="large">This is some text.</p>
 
     <p id="green" class="large">More text.</p>
