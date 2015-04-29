@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        .large{
+            font-size: 300%;
+        }
+
+        #green{
+            color: green;
+        }
+
+        .underlined{
+            text-decoration: underline;
+        }
+
+        .bold{
+            font-weight:bold;
+        }
+
+        .purplebox{
+            background-color: #B404AE;
+            width: 200px;
+            height: 200px;
+            padding: 10px 100px;
+        }
+
+        .redbox{
+            background-color: red;
+            width: 400px;
+            height: 220px;
+        }
+
+        p{
+            padding: 0;
+            margin:0;
+        }
+
+        .reddiv{
+            width: 100px;
+            background-color: red;
+            float: left;
+        }
+
+        .bluediv{
+            width: 100px;
+            background-color: blue;
+            float: left;
+        }
+
+        .greendiv{
+            width:100px;
+            background-color: green;
+            float: left;
+        }
+    </style>    
+</head>
+
+<body>
+    <div class="reddiv">
+        Blah
+    </div>
+
+    <div class="bluediv">
+        Bleh
+    </div>
+
+    <div class="greendiv">
+        Bluh
+    </div>
+
+    <div class="purplebox">
+        <p class="large">This is some text.</p>
+    </div>
+
+    <div class="redbox">
+        <p id="green" class="large">This is more text.</p>
+    </div>
+
+    <p class="large">This is some text.</p>
+
+    <p id="green" class="large">More text.</p>
+
+    <p>The third <span class="underlined large bold">word</span> in this paragraph is underlined, large and bold</p>
+</body>
+</html>
