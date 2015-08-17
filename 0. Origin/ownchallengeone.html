@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Own Challenge Number One</title>
+
+	<link rel="stylesheet" type="text/css" href="oco.css" >
+</head>
+	<div id="main">
+		<h1>Own Challenge</h1>
+
+		<p id="paragraph">This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. This is a testing paragraph copy and pasted for testing. </p>
+
+		<input id="myInput" type="text" value="test"/>
+
+		<button id="myButton">Change paragraph</button>
+	</div>
+
+	<script type="text/javascript">
+
+		var text; 
+
+		document.getElementById("myButton").onclick=function(){
+			text = document.getElementById("myInput").value;
+
+			document.getElementById("paragraph").innerHTML=(text);
+		}
+	</script>
+</html>
