@@ -15,17 +15,34 @@
 
     <input id="answer"/>
 
+    <p>What's my favorite food?</p>
+
+    <input id="answerFood"/>
+
     <button id="myButton">Submit</button>
 
     <script type="text/javascript">
 
         document.getElementById("myButton").onclick=function(){
 
+            var cArray = Array();
+
+            cArray.push("pizza", "spaghetti", "oreos");
+
+            var xF = cArray[Math.floor(3*Math.random())];
+
             var x = Math.random();
 
             x = 6*x;
 
             x = Math.floor(x);
+
+            if (xF == document.getElementById("answerFood").value) {
+                alert("That's correct!");
+
+            } else {
+                alert("That's wrong! My favorite food is " + xF);
+            }
 
             if (x == document.getElementById("answer").value) {
                 alert("That's correct!");
