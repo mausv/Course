@@ -20,14 +20,24 @@
 
 <body>
 
+    <p>Your time: <span id="time"></span></p>
+
     <div id="box"></div>
 
-    <script>
+    <script type="text/javascript">
+        var clickedTime; var createdTime; var reactionTime;
 
         appear();
 
         document.getElementById("box").onclick=function(){
+            clickedTime = Date.now();
+
+            reactionTime = (clickedTime-createdTime)/1000;
+
+            document.getElementById("time").innerHTML=reactionTime;
+
             this.style.display="none";
+
             appear();
         }
 
@@ -35,6 +45,7 @@
 
             setTimeout(function() {
                 document.getElementById("box").style.display="block";
+                createdTime = Date.now();
             }, Math.floor(6000 * Math.random()));
 
         }
