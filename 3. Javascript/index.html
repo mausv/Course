@@ -6,25 +6,38 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: none;
+        }
+    </style>
     
 </head>
 
-<body>    
-    <p id="paragraph">How many fingers are you holding up?</p>
+<body>
 
-    <input id="myNumber"/>
+    <div id="box"></div>
 
-    <button id="guess">Guess!</button>
+    <script>
 
-    <script type="text/javascript">
+        appear();
 
-        function adding(a, b) {
-
-            return(a+b);
-
+        document.getElementById("box").onclick=function(){
+            this.style.display="none";
+            appear();
         }
 
-        document.getElementById("paragraph").innerHTML=adding(3, 4);
+        function appear () {
+
+            setTimeout(function() {
+                document.getElementById("box").style.display="block";
+            }, Math.floor(6000 * Math.random()));
+
+        }
 
     </script>
 
