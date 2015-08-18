@@ -11,9 +11,9 @@
 
 <body>    
 
-    <p>What is the weather?</p>
+    <p>How many fingers am I holding up?</p>
 
-    <input id="weather"/>
+    <input id="answer"/>
 
     <button id="myButton">Submit</button>
 
@@ -21,16 +21,17 @@
 
         document.getElementById("myButton").onclick=function(){
 
-            if (document.getElementById("weather").value == "rain") {
+            var x = Math.random();
 
-                alert ("It's raining");
+            x = 6*x;
 
+            x = Math.floor(x);
+
+            if (x == document.getElementById("answer").value) {
+                alert("That's correct!");
             } else {
-
-                alert ("It's not raining");
-
+                alert("That's wrong! My number was " + x);
             }
-
         }
 
     </script>
