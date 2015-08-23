@@ -29,15 +29,17 @@
 
 <body>
 
-    <div class="square"></div>
-    <div class="square"></div>
     <div id="circle"></div>
+
+    <p>This is some text</p>
+
+    <iframe src="http://cnn.com"></iframe>
     
     <script>
 
-        $("div").click(function() {
+        $("#circle").hover(function() {
 
-            alert("Div clicked!");
+            $("iframe").attr("src", "http://splashgamestudio.com");
 
         });
 
