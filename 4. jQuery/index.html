@@ -16,8 +16,8 @@
         }
 
         #circle {
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
             border-radius: 100px;
             background-color: green;
         }
@@ -31,15 +31,18 @@
 
     <div id="circle"></div>
 
-    <p>This is some text</p>
+    <div class="square"></div>
 
-    <iframe src="http://cnn.com"></iframe>
+    <div class="square"></div>
     
     <script>
 
-        $("#circle").hover(function() {
+        $("#circle").click(function() {
 
-            $("iframe").attr("src", "http://splashgamestudio.com");
+            //$(this).css("display", "none");
+            //$(this).hide();
+            //$(this).fadeOut();
+            $(".square").fadeOut();
 
         });
 
