@@ -29,21 +29,30 @@
 
 <body>
 
-    <div id="circle"></div>
+    <p>This is a paragraph!</p>
 
-    <div class="square"></div>
+    <button id="btn">Click Me!</button>
 
-    <div class="square"></div>
+    <button id="btn2">Click Me Too!</button>
     
     <script>
 
-        $("#circle").click(function() {
+        $("#btn").click(function() {
 
             //$(this).css("display", "none");
             //$(this).hide();
             //$(this).fadeOut();
-            $(".square").fadeOut();
+            //$("p").fadeOut(2000);
+            $("p").fadeOut("fast", function() {
 
+                alert("Done.");
+
+            });
+
+        });
+
+        $("#btn2").click(function() {
+            $("p").fadeIn();
         });
 
     </script>
