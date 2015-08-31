@@ -33,7 +33,20 @@
     
     <script>
 
-        
+        /*$.get("test.html", function(data) {
+
+            alert(data);
+
+        });*/
+
+        $.ajax( {
+            url: "test.html"
+
+
+        }).done(function(data) {
+            //$("h1").html(data);
+            $("h1").append(data);
+        });
 
     </script>
 
