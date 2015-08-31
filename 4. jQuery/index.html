@@ -15,10 +15,10 @@
             background-color: green;
         }
 
-        #resizable {
-            height: 200px;
-            width: 200px;
-            background-color: green;
+        #target {
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
         }
 
     </style>
@@ -35,7 +35,7 @@
 
     <div id="draggable">Drag me around!</div>
 
-    <div id="resizable">Resize me!</div>
+    <div id="target"></div>
 
     <p>
 
@@ -43,7 +43,11 @@
 
         $("#draggable").draggable();
 
-        $("#resizable").resizable();
+        $("#target").droppable({
+            drop: function (ui, event) {
+                $("#target").css("background-color", "red");
+            }
+        });
 
     </script>
 
