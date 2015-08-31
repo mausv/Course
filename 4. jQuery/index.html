@@ -16,8 +16,8 @@
         }
 
         #circle {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             border-radius: 100px;
             background-color: green;
         }
@@ -29,30 +29,21 @@
 
 <body>
 
-    <p>This is a paragraph!</p>
-
-    <button id="btn">Click Me!</button>
-
-    <button id="btn2">Click Me Too!</button>
+    <div id="circle"></div>
     
     <script>
 
-        $("#btn").click(function() {
+        $("#circle").click(function() {
 
-            //$(this).css("display", "none");
-            //$(this).hide();
-            //$(this).fadeOut();
-            //$("p").fadeOut(2000);
-            $("p").fadeOut("fast", function() {
+            $(this).animate({
+                width:"600px",
+                height:"600px",
+                borderRadius: "300px",
+                marginLeft:"100px",
+                marginTop: "100px"
 
-                alert("Done.");
+            }, 800);
 
-            });
-
-        });
-
-        $("#btn2").click(function() {
-            $("p").fadeIn();
         });
 
     </script>
