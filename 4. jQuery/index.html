@@ -9,13 +9,21 @@
 
     <style>
         
-        #square {
+        #draggable {
             height: 200px;
             width: 200px;
-            background-color: grey;
+            background-color: green;
+        }
+
+        #resizable {
+            height: 200px;
+            width: 200px;
+            background-color: green;
         }
 
     </style>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
     <script type="text/javascript" src="jquery.min.js"></script>
 
@@ -25,11 +33,17 @@
 
 <body>
 
-    <div id="square"></div>
+    <div id="draggable">Drag me around!</div>
+
+    <div id="resizable">Resize me!</div>
+
+    <p>
 
     <script>
 
-        $("#square").draggable();
+        $("#draggable").draggable();
+
+        $("#resizable").resizable();
 
     </script>
 
