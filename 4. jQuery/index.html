@@ -33,21 +33,55 @@
 
 <body>
 
-    <div id="draggable">Drag me around!</div>
+    <!-- <div id="accord">
 
-    <div id="target"></div>
+        <h3>Title</h3>
 
-    <p>
+        <div>
+            <p>This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. </p>
+        </div>
+
+        <h3>Title</h3>
+
+        <div>
+            <p>This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. </p>
+        </div>
+
+        <h3>Title</h3>
+
+        <div>
+            <p>This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. </p>
+        </div>
+
+        <h3>Title</h3>
+
+        <div>
+            <p>This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. </p>
+        </div>
+
+        <h3>Title</h3>
+
+        <div>
+            <p>This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. </p>
+        </div>
+
+    </div> -->
+
+    <ul>
+
+        <li>Pizza</li>
+        <li>Hamburguers</li>
+        <li>Cheese</li>
+        <li>Tomatoes</li>
+        <li>Chocolate</li>
+
+    </ul>
 
     <script>
 
-        $("#draggable").draggable();
+    $("ul").sortable();
 
-        $("#target").droppable({
-            drop: function (ui, event) {
-                $("#target").css("background-color", "red");
-            }
-        });
+        //$("#accord").accordion();
 
     </script>
 
